@@ -1,4 +1,103 @@
+Loading and cleaning data...
+Data cleaning complete. Shape: (100, 13)
+--------------------------------------------------
 
+=== SECTION A: HIGH-LEVEL KPIs ===
+Q1. Total Funding Jan-Feb 2026: $1316.0M
+Q2. Total Deals: 100
+ Avg Deal Size: $15.13M
+
+Q3. Top 5 Startups by Funding:
+                        Name  Funding Amount (USD) Primary Industry   Funding Type
+Aditya Birla Housing Finance           304527929.0          Finance Private Equity
+                    CleanMax           165434178.0           Energy Private Equity
+                  GREW Solar           115738738.0           Energy Private Equity
+         Radiance Renewables           100000000.0           Energy Private Equity
+             Arya Collateral            80584611.0      Agriculture       Series D
+
+=== SECTION B: SECTOR & STAGE TRENDS ===
+
+Q4. Top 5 Sectors by Funding:
+                   Funding Amount (USD)  Deal Count
+Primary Industry                                   
+Energy                      385193146.0           5
+Finance                     304527929.0           1
+Agriculture                 110584611.0           3
+FinTech                      86274805.0           9
+Food and Beverage            67252016.0           7
+
+Q5. Funding % by Stage:
+Stage_Group
+Early Stage        6.7
+Growth Stage      23.9
+Late Stage        12.4
+Other/Unknown      3.4
+Private Equity    53.6
+Name: Funding Amount (USD), dtype: float64
+
+Q6. Sector with Most Pre-Seed Deals: Food and Beverage - 2 deals
+
+=== SECTION C: TIME & TYPE ANALYSIS ===
+
+Q7. Jan 2026: $214.1M | Feb 2026: $1101.9M
+ Growth: 414.7%
+
+Q8. Funding Type Breakdown:
+Funding Type
+Seed                        44
+Series A                    16
+Pre-Seed                    12
+Private Equity               7
+Series B                     6
+Venture - Series Unknown     6
+Series C                     4
+Series D                     3
+Series E                     1
+Convertible Note             1
+Name: count, dtype: int64
+
+Q9. Unicorn Potential Deals >$20M: 13 deals
+                        Name  Funding Amount (USD)  Primary Industry
+           Easy Home Finance            30000000.0           FinTech
+             The Whole Truth            51000000.0 Food and Beverage
+                 JS AutoCast            32773634.0     Manufacturing
+Aditya Birla Housing Finance           304527929.0           Finance
+        Jain Cord Industries            22155179.0           Fashion
+                  GREW Solar           115738738.0            Energy
+                  Supertails            30000000.0              Pets
+                True Balance            21918324.0            Mobile
+                    CleanMax           165434178.0            Energy
+         Radiance Renewables           100000000.0            Energy
+                        Olyv            22829917.0           FinTech
+              Knight FinTech            23600000.0           FinTech
+             Arya Collateral            80584611.0       Agriculture
+
+=== SECTION D: ADVANCED INSIGHTS ===
+
+Q10. Top Industry Combinations by Funding:
+Industry
+Finance, Real Estate                            304527929.0
+Energy, Environment                             165434178.0
+Energy, Electronics, Hardware, Manufacturing    115738738.0
+Energy, Construction, Environment, Utilities    100000000.0
+Agriculture, Finance, Logistics, Marketplace     80584611.0
+Name: Funding Amount (USD), dtype: float64
+
+Q11. % Undisclosed Deals: 13.0%
+
+Q12. Funding Type with Highest Avg Deal: Private Equity - $141.02M
+
+==================================================
+Analysis Complete! Cleaned data saved to: data/funding_data_2026_cleaned.csv
+Run this file first, then run app.py for dashboard
+==================================================
+
+KEY INSIGHTS FOR BOARD:
+1. Total $1.32B raised across 100 deals in 2 months. Avg deal: $15.1M
+2. 6.7% funding went to Early Stage. Food and Beverage leads in new startup formation
+3. 13.0% deals are undisclosed - transparency issue. 414.7% growth from Jan to Feb
+
+PS C:\Users\REMSHA\Documents\Projects\Funded-2026-PowerBI-India-Startups> 
 KEY INSIGHTS FOR BOARD:
 1. Total $1.32B raised across 100 deals in 2 months. Avg deal: $15.1M
 2. 6.7% funding went to Early Stage. Food and Beverage leads in new startup formation
